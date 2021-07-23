@@ -1,0 +1,28 @@
+{
+  "name": "spacefinder-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-cdk": "^1.115.0",
+    "aws-cdk-lib": "^2.0.0-rc.14",
+    "constructs": "^10.0.5",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawo4884/spacefinder-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pawo4884/spacefinder-backend/issues"
+  },
+  "homepage": "https://github.com/pawo4884/spacefinder-backend#readme"
+}
