@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/pawo4884/spacefinder-backend#readme",
   "dependencies": {
+    "@types/aws-lambda": "^8.10.80",
     "@types/uuid": "^8.3.1",
     "aws-sdk": "^2.953.0",
     "uuid": "^8.3.2"
