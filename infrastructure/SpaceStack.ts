@@ -9,6 +9,7 @@ import {
 import { join } from "path";
 import { LambdaIntegration, RestApi } from "aws-cdk-lib/lib/aws-apigateway";
 import { GenericTable } from "./GenericTables";
+import { NodejsFunction } from "aws-cdk-lib/lib/aws-lambda-nodejs";
 export class SpaceStack extends Stack {
   private api = new RestApi(this, "SpaceApi");
   private spacesTable = new GenericTable("SpacesTable", "spaceId", this);
@@ -20,6 +21,11 @@ export class SpaceStack extends Stack {
       runtime: Runtime.NODEJS_14_X,
       code: Code.fromAsset(join(__dirname, "..", "services", "hello")),
       handler: "hello.main",
+    });
+
+    const helloLambdaNodeJs = new NodejsFunction(this, "helloLambdaNodeJs", {
+      entry: join(__dirname, "..", "services", "node-lambda", "hello.ts"),
+      handler: "handler",
     });
 
     const helloLambdaIntegration = new LambdaIntegration(helloLambda);

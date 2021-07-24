@@ -14,10 +14,10 @@
     "aws-cdk": "2.0.0-rc.14",
     "aws-cdk-lib": "^2.0.0-rc.14",
     "constructs": "^10.0.5",
+    "esbuild": "^0.12.15",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pawo4884/spacefinder-backend.git"
@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/pawo4884/spacefinder-backend/issues"
   },
-  "homepage": "https://github.com/pawo4884/spacefinder-backend#readme"
+  "homepage": "https://github.com/pawo4884/spacefinder-backend#readme",
+  "dependencies": {
+    "@types/uuid": "^8.3.1",
+    "uuid": "^8.3.2"
+  }
 }
