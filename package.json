@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "aws-cdk": "^1.115.0",
+    "@types/node": "^16.4.1",
+    "aws-cdk": "2.0.0-rc.14",
     "aws-cdk-lib": "^2.0.0-rc.14",
     "constructs": "^10.0.5",
     "ts-node": "^10.1.0",
