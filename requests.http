@@ -1,31 +1,31 @@
 @endpoint = https://vdqy1srt0a.execute-api.eu-central-1.amazonaws.com/prod
 
-GET {{endpoint}}/hello/
-###
-
-GET {{endpoint}}/spaces/
-###
-
-GET {{endpoint}}/spaces?spaceId=cf8b38b7-bc55-447e-ad13-d60d87e7d8d6
-###
-
-PUT {{endpoint}}/spaces?spaceId=cf8b38b7-bc55-447e-ad13-d60d87e7d8d6
-Content-Type: application/json
-
-{
-  "location": "Updated Location",
-  "name": "Best location"
-}
-###
-
-GET {{endpoint}}/spaces?location=London
-###
-
 POST {{endpoint}}/spaces/
 Content-Type: application/json
 
 {
   "location": "London",
-  "name": "Best location"
+  "name": "New location"
 }
 ### 
+
+GET {{endpoint}}/spaces/
+###
+
+GET {{endpoint}}/spaces?location=London
+###
+
+GET {{endpoint}}/spaces?spaceId=5a05d40e-7e37-4dcf-8731-1b494e0a8872
+###
+
+PUT {{endpoint}}/spaces?spaceId=5a05d40e-7e37-4dcf-8731-1b494e0a8872
+Content-Type: application/json
+
+{
+  "location": "Last Updated Location",
+  "name": "Best updated location"
+}
+###
+
+DELETE {{endpoint}}/spaces?spaceId=cf8b38b7-bc55-447e-ad13-d60d87e7d8d6
+###
