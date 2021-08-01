@@ -4,6 +4,7 @@ import { handler } from "../../services/SpacesTable/Create";
 const event: APIGatewayProxyEvent = {
   body: {
     name: "some name",
+    location: "some location",
   },
 } as any;
 
